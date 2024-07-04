@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Genos";
+  src: url("../assets/fonts/Genos-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+.font-genos {
+  font-family: "Genos";
+}
+
+.font-hanken {
+  font-family: "HankenGrotesk";
+}
+
+html {
+  /* background-image: url("../assets/background/sky.png"); */
+  background-color: #eeeeee;
+  background-size: 100%;
+  background-position: left top;
+}
+
+.badge {
+  @apply rounded-lg w-14 h-14 flex items-center justify-center ring-2 ring-gray-100 shadow-lg;
+}
+
+.smooth-card-border {
+  -webkit-box-shadow: 5px 5px 15px 5px #cfcfcf7f;
+  box-shadow: 5px 5px 15px 5px #cfcfcf68;
+  @apply ring-1 ring-gray-200 rounded-lg bg-gradient-to-tr from-neutral-50 to-white;
+}
+
+.card {
+  @apply rounded-md p-5 pt-2 pb-2 flex flex-col justify-between backdrop-blur-md;
+  /* border: 0.5px solid rgba(255, 255, 255, 0.35); */
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 15px rgba(181, 181, 181, 0.2);
+}
+
+.photo {
+  @apply rounded-md;
+  /* border: 0.5px solid rgba(255, 255, 255, 0.35); */
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  background-image: url("../assets/background/sky.png");
+  backdrop-filter: opacity(0.5);
+}
+
+.bg-white-50 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-title {
+  @apply font-genos font-semibold md:text-xl text-2xl self-end text-neutral-900;
+}
+
+.card-title-number {
+  @apply font-hanken text-base text-orange-400;
+}
